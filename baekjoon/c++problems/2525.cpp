@@ -4,18 +4,10 @@ int main()
 {
     int h, m, t;
     cin >> h >> m >> t;
-
-    int th = t / 60 +h;
-    int tm = t % 60 +m;
-    if(tm >59){
-        tm -=60;
-        if(++h>23){
-            h=0;
-            h+th%24;
-        }
-    }
-    cout << h<<" "<< tm;
-    
-
+    m = h * 60 + m;
+    m = m + t;
+    h = (m / 60) % 24;
+    m = m % 60;
+    cout <<h<<" "<<m<<endl;
     return 0;
 }
