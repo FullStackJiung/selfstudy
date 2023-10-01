@@ -2,8 +2,7 @@
 using namespace std;
 int main()
 {
-    // sync_with_stdio= false;
-    // cin.tie(null);
+   
     int size = 0;
     int a = 0;
     int b = 0;
