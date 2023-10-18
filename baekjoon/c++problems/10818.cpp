@@ -15,7 +15,7 @@ int main()
 		cin >> array[i];
 	}
  
-	sort(array, array + N);		// 0 ~ N-1 범위 정렬
+	sort(array, array + N);		
  
 	cout << array[0] << " " << array[N - 1];
  
